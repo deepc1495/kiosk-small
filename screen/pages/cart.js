@@ -24,6 +24,8 @@ import { BlackBackArrow, QRLoader } from "../assets/svgIcons";
 import Loader from "../component/loader";
 import { useToast } from "react-native-toast-notifications";
 import QRCode from "react-native-qrcode-svg";
+import 'text-encoding';
+
 import { Pusher } from "@pusher/pusher-websocket-react-native";
 import { getAndroidId } from "react-native-device-info";
 
