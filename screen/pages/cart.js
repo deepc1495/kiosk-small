@@ -47,6 +47,7 @@ const Cart = ({ navigation }) => {
     setisLoading(true);
     const user_id = await AsyncStorage.getItem("user_Id");
     const params = `user_id=${user_id}&kioskId=${kiosk}`;
+    console.log("params::", params)
     const data = await getcartList(params);
     setTimeout(() => {
       if (Number(data?.total_amount) < 1 || data?.success === false) {

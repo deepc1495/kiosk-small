@@ -451,7 +451,7 @@ const Home = ({ navigation }) => {
                     },
                   ]}
               source={{
-                  uri: item.desktopimage,
+                  uri:  isEnglish ? item.desktopimage : item?.desktopimg_forarabic,
                   priority: FastImage.priority.high,
               }}
               resizeMode={FastImage.resizeMode.stretch}

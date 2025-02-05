@@ -1,6 +1,7 @@
 
 // const API_ENDPOINT = 'https://api-dev.dubaicharity.org/api/';
 const API_ENDPOINT = 'https://api.dubaicharity.org/api/';
+//const API_ENDPOINT = `https://api-stg.synkcode.com/api/`
 
 const get = async(url, options = {}) => {
   return new Promise(async (resolve, reject) => {
